@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fb">
+  <meta name="description" content="این دامنه برای فروش است. برای خرید دامنه یا دریافت مشاوره و خدمات فنی هوش مصنوعی با مالک تماس بگیرید.">
+  <title>فروش دامنه | ارتباط با مالک</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Vazirmatn:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172b43;
+      --text: #304259;
+      --muted: #64748b;
+      --line: #e5ebf1;
+      --primary: #0c6867;
+      --primary-hover: #095452;
+      --surface: #ffffff;
+      --background: #f6f8fb;
+      font-family: "Vazirmatn", "Noto Sans Arabic", Tahoma, sans-serif;
+      font-synthesis: none;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.9;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid #79c9c4; outline-offset: 4px; }
+    .page { width: min(100% - 40px, 930px); margin: 0 auto; }
+    .topbar {
+      min-height: 98px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .identity { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: 14px; font-weight: 800; }
+    .identity-mark {
+      width: 36px; height: 36px;
+      display: grid; place-items: center;
+      border: 1px solid #c8e5e1;
+      border-radius: 12px;
+      background: #e7f5f2;
+      color: var(--primary);
+      font-family: Inter, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+    }
+    .top-contact {
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+      border-bottom: 1px solid #afd6d2;
+      padding-bottom: 1px;
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 14px 46px rgba(28, 45, 69, .045);
+      padding: clamp(26px, 5.4vw, 64px);
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; left: 0;
+      height: 4px;
+      background: linear-gradient(270deg, #0c6867, #6eb6ae 48%, #dcefe9);
+    }
+    .hero { text-align: center; }
+    .hero .intro { margin: 15px auto 0; }
+    .hero .actions { justify-content: center; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid #d4e9e4;
+      background: #f2faf7;
+      color: #23665c;
+      padding: 5px 13px;
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #278978; }
+    .domain {
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      font-size: clamp(38px, 7.5vw, 72px);
+      line-height: 1.2;
+      letter-spacing: -.05em;
+      font-weight: 800;
+      color: var(--ink);
+      direction: ltr;
+      text-align: center;
+      overflow-wrap: anywhere;
+      margin: 25px 0 16px;
+    }
+    h1 { margin: 0; font-size: clamp(24px, 3.6vw, 34px); font-weight: 800; line-height: 1.6; color: var(--ink); }
+    .intro { max-width: 640px; margin: 15px 0 0; font-size: 15px; color: var(--muted); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 19px;
+      border-radius: 11px;
+      border: 1px solid #dbe4eb;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      background: #fff;
+      color: var(--ink);
+      transition: background-color .15s, border-color .15s, transform .15s;
+    }
+    .button:hover { background: #f5f9fc; border-color: #bacdd7; transform: translateY(-1px); }
+    .button.primary { color: #fff; background: var(--primary); border-color: var(--primary); }
+    .button.primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
+    .contact-line { margin-top: 16px; font-size: 13px; color: var(--muted); }
+    .contact-line a { direction: ltr; unicode-bidi: isolate; display: inline-block; text-decoration: none; color: #3f6378; }
+    .contact-line a:hover { text-decoration: underline; }
+    .separator { height: 1px; background: var(--line); margin: 42px 0 32px; border: 0; }
+    .section-label { color: var(--primary); font-weight: 700; font-size: 12px; margin: 0 0 4px; }
+    h2 { color: var(--ink); font-size: clamp(19px, 2.8vw, 23px); margin: 0; line-height: 1.7; }
+    .service-copy { max-width: 740px; margin: 11px 0 0; font-size: 14px; color: var(--muted); }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 25px 4px 48px;
+      font-size: 12px;
+      color: #78869a;
+    }
+    .footer a { color: #516a78; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    @media (max-width: 560px) {
+      .page { width: min(100% - 28px, 930px); }
+      .topbar { min-height: 77px; }
+      .top-contact { font-size: 12px; }
+      .card { border-radius: 18px; }
+      .domain { margin-top: 21px; }
+      .actions { flex-direction: column; }
+      .button { width: 100%; }
+      .separator { margin: 32px 0 25px; }
+      .footer { flex-direction: column; text-align: center; padding-bottom: 30px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="identity"><span class="identity-mark" aria-hidden="true">D</span><span>واگذاری دامنه</span></div>
+      <a class="top-contact" href="mailto:hesam.farzaneh@gmail.com?subject=درخواست%20خرید%20دامنه">ارتباط با مالک ←</a>
+    </header>
+
+    <main class="card">
+      <div class="hero">
+      <div class="badge">آماده واگذاری</div>
+      <div class="domain" id="domain" lang="en">yesai.ir</div>
+      <h1>این دامنه برای فروش است</h1>
+      <p class="intro">اگر به خرید این دامنه علاقه‌مند هستید، برای اطلاع از شرایط واگذاری و گفت‌وگوی مستقیم با مالک از راه‌های ارتباطی زیر استفاده کنید.</p>
+
+      <nav class="actions" aria-label="راه‌های ارتباط">
+        <a class="button primary" href="tel:+989351791697">تماس تلفنی <span dir="ltr">۰۹۳۵ ۱۷۹ ۱۶۹۷</span></a>
+        <a class="button" href="mailto:hesam.farzaneh@gmail.com?subject=درخواست%20خرید%20دامنه">ارسال ایمیل</a>
+        <a class="button" href="https://www.linkedin.com/in/hesam-farzaneh-12951311b/" target="_blank" rel="noopener noreferrer">لینکدین</a>
+      </nav>
+      <div class="contact-line">ایمیل: <a href="mailto:hesam.farzaneh@gmail.com">hesam.farzaneh@gmail.com</a></div>
+      </div>
+
+      <hr class="separator">
+
+      <section aria-labelledby="services-title">
+        <p class="section-label">زمینه فعالیت</p>
+        <h2 id="services-title">مشاوره و اجرای راهکارهای هوش مصنوعی</h2>
+        <p class="service-copy">طراحی و پیاده‌سازی سامانه‌های مبتنی بر هوش مصنوعی، یکپارچه‌سازی مدل‌های زبانی و APIها، اتوماسیون فرایندها، راه‌اندازی زیرساخت LLM و مشاوره فنی.</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>حسام فرزانه · مالک دامنه</span>
+      <span>برای خرید دامنه یا همکاری فنی، از راه‌های ارتباطی بالا پیام بدهید.</span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var host = window.location.hostname.toLowerCase().replace(/^www\./, "");
+      var domain = host.endsWith(".github.io") ? "دامنه آماده واگذاری" : host;
+      var node = document.getElementById("domain");
+      node.textContent = domain;
+      if (host.endsWith(".github.io")) node.removeAttribute("lang");
+      document.title = "فروش دامنه " + domain + " | ارتباط با مالک";
+    }());
+  </script>
+</body>
+</html>
